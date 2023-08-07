@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "declaration": true,
+        "declarationMap": true,
+        "sourceMap": true,
+        "module": "commonjs",
+        "target": "ES2015",
+        "lib": ["ES2015", "DOM"],
+        "rootDir": "./",
+        "outDir": "./lib",
+        "composite": true
+    }
+  }
