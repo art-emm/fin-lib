@@ -9,6 +9,26 @@ export interface IPortfolio {
     }[]
 }
 
+export interface IApiUserPortfolio {
+    id: number;
+    name: string;
+    portfolioPrice: number;
+    portfolioAvgPrice: number;
+    profit: number;
+    profitPercent: number;
+    instruments: IApiUserInstrument[]
+}
+
+export interface IApiUserInstrument {
+    symbol: string;
+    instrumentPrice: number;
+    avgInstrumentPrice: number;
+    percentage: number;
+    profit: number;
+    profitPercent: number;
+    quantity: number;
+}
+
 export interface IUserInstrument {
     id: number;
     dividends: IDividend[];
