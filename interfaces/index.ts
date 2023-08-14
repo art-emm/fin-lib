@@ -23,7 +23,8 @@ export interface IApiUserInstrument {
     symbol: string;
     instrumentPrice: number;
     avgInstrumentPrice: number;
-    percentage: number;
+    expectedPercentage: number;
+    currentPercentage: number;
     profit: number;
     profitPercent: number;
     quantity: number;
