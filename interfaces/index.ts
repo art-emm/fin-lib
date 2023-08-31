@@ -20,6 +20,7 @@ export interface IApiUserPortfolio {
 }
 
 export interface IApiUserInstrument {
+    userInstrumentId: number;
     symbol: string;
     instrumentPrice: number;
     avgInstrumentPrice: number;
