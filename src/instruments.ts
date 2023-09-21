@@ -1,4 +1,18 @@
 import { IDividend, IInstrumentSummary, ITrade, IDividendSummary, ITradesSummary, IUserInstrument } from "../interfaces";
+import { IApiYearsMonthesMap } from "../interfaces/api/dashboard";
+
+
+
+export function getAmountFromYearsMonthesMap(yearsMonthesMap: IApiYearsMonthesMap): number {
+    debugger;
+    let amount = 0;
+    for (const year in yearsMonthesMap) {
+        for (const month in yearsMonthesMap[year]) {
+            amount += yearsMonthesMap[year][month];
+        }
+    }
+    return amount;
+}
 
 export function getUserInstrumentSummary(userInstrument:  IUserInstrument): IInstrumentSummary {
     
