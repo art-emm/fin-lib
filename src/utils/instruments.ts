@@ -79,11 +79,4 @@ export function getTradesSummary(trades: ITrade[]): ITradesSummary {
         instrumentSoldAmount
     }
 }
-
-export function a() {
-
-
-}
-
-export const A = 10;
 // Path: src/interfaces/index.ts
