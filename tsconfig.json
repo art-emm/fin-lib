@@ -1,21 +1,35 @@
 {
+    "files": ["index.ts"],
     "compilerOptions": {
+        "target": "es2017",
+        "module": "commonjs",
+        "lib": ["es2017", "es7", "es6"],
         "declaration": true,
-        "declarationMap": true,
-        "sourceMap": true,
-        "module": "es2020",
-        "target": "es2020",
-        "lib": [
-            "es2020",
-            "dom"
-        ],
-        "moduleResolution": "node",
-        "rootDir": "./",
-        "outDir": "./lib",
-        "composite": true
+        "outDir": "./dist",
+        "noEmit": false,
+        "strict": true,
+        "noImplicitAny": true,
+        "strictNullChecks": true,
+        "strictFunctionTypes": true,
+        "strictBindCallApply": true,
+        "strictPropertyInitialization": true,
+        "noImplicitThis": true,
+        "alwaysStrict": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "noImplicitReturns": true,
+        "noFallthroughCasesInSwitch": true,
+        "noUncheckedIndexedAccess": true,
+        "noImplicitOverride": true,
+        "noPropertyAccessFromIndexSignature": true,
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        "skipLibCheck": true
     },
+    "include": ["src/**/*"],
+
     "exclude": [
         "node_modules",
-        "lib"
-    ] 
+        "dist"
+    ]
   }

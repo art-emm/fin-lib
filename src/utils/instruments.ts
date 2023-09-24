@@ -1,12 +1,13 @@
-import { IDividend, IInstrumentSummary, ITrade, IDividendSummary, ITradesSummary, IUserInstrument } from "../interfaces";
+import { IDividend, IInstrumentSummary, ITrade, IDividendSummary, ITradesSummary, IUserInstrument } from "../interfaces/index";
 import { IApiYearsMonthesMap } from "../interfaces/api/dashboard";
 
 export function getAmountFromYearsMonthesMap(yearsMonthesMap: IApiYearsMonthesMap): number {
-    debugger;
+
     let amount = 0;
     for (const year in yearsMonthesMap) {
         for (const month in yearsMonthesMap[year]) {
-            amount += yearsMonthesMap[year][month];
+            const monthesMapInYear = yearsMonthesMap[year] || {}
+            amount += monthesMapInYear[month] || 0;
         }
     }
     return amount;
@@ -37,7 +38,6 @@ export function getDividendsSummary(dividends: IDividend[]): IDividendSummary {
 }
 
 export function getTradesSummary(trades: ITrade[]): ITradesSummary {
-    let instrumentAmount = 0;
     let instrumentBoughtAmount = 0;
     let instrumentSoldAmount = 0;
     
