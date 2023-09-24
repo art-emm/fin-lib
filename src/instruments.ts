@@ -1,8 +1,6 @@
 import { IDividend, IInstrumentSummary, ITrade, IDividendSummary, ITradesSummary, IUserInstrument } from "../interfaces";
 import { IApiYearsMonthesMap } from "../interfaces/api/dashboard";
 
-
-
 export function getAmountFromYearsMonthesMap(yearsMonthesMap: IApiYearsMonthesMap): number {
     debugger;
     let amount = 0;
@@ -80,5 +78,4 @@ export function getTradesSummary(trades: ITrade[]): ITradesSummary {
         instrumentSoldAmount
     }
 }
-
 // Path: src/interfaces/index.ts

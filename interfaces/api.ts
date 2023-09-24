@@ -1,9 +1,8 @@
-import { IApiDashboardChart, IApiDashboardDeposit, IApiDashboardDividends, IApiDashboardInstrument, IApiDashboardTaxes } from "./api/dashboard";
+import { IApiDashboardChart, IApiDashboardDeposit, IApiDashboardDividends, IApiDashboardInstrument, IApiDashboardTaxes, IApiYearsMonthesMap } from "./api/dashboard";
 
 export interface IApiDashboardInfo {
+    portfolios: IApiUserPortfolio[];
     instruments: IApiDashboardInstrument[];
-    taxes: IApiDashboardTaxes;
-    dividends: IApiDashboardDividends;
     deposits: IApiDashboardDeposit;
     chart: IApiDashboardChart
 }
@@ -16,6 +15,8 @@ export interface IApiUserPortfolio {
     profit: number;
     profitPercent: number;
     instruments: IApiUserInstrument[]
+    dividends: IApiYearsMonthesMap;
+    taxes: IApiYearsMonthesMap;
 }
 
 export interface IApiUserInstrument {

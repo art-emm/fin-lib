@@ -4,10 +4,15 @@
         "declarationMap": true,
         "sourceMap": true,
         "module": "commonjs",
-        "target": "ES2015",
-        "lib": ["ES2015", "DOM"],
+        "target": "es2020",
+        "moduleResolution": "node",
+        // "lib": ["ES2015", "DOM"],
         "rootDir": "./",
         "outDir": "./lib",
         "composite": true
-    }
+    },
+    "exclude": [
+        "node_modules",
+        "lib"
+    ] 
   }
