@@ -3,10 +3,13 @@
         "declaration": true,
         "declarationMap": true,
         "sourceMap": true,
-        "module": "commonjs",
+        "module": "es2020",
         "target": "es2020",
+        "lib": [
+            "es2020",
+            "dom"
+        ],
         "moduleResolution": "node",
-        // "lib": ["ES2015", "DOM"],
         "rootDir": "./",
         "outDir": "./lib",
         "composite": true

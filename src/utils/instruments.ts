@@ -35,6 +35,7 @@ export function getDividendsSummary(dividends: IDividend[]): IDividendSummary {
         dividendsAmount
     }
 }
+
 export function getTradesSummary(trades: ITrade[]): ITradesSummary {
     let instrumentAmount = 0;
     let instrumentBoughtAmount = 0;
@@ -78,4 +79,11 @@ export function getTradesSummary(trades: ITrade[]): ITradesSummary {
         instrumentSoldAmount
     }
 }
+
+export function a() {
+
+
+}
+
+export const A = 10;
 // Path: src/interfaces/index.ts

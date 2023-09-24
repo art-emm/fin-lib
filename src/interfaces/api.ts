@@ -1,4 +1,4 @@
-import { IApiDashboardChart, IApiDashboardDeposit, IApiDashboardDividends, IApiDashboardInstrument, IApiDashboardTaxes, IApiYearsMonthesMap } from "./api/dashboard";
+import { IApiDashboardChart, IApiDashboardDeposit, IApiDashboardInstrument, IApiYearsMonthesMap } from "./api/dashboard";
 
 export interface IApiDashboardInfo {
     portfolios: IApiUserPortfolio[];
