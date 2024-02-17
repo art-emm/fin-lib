@@ -67,7 +67,7 @@ export interface IApiStockInfo {
     lynch: {
         futureEpsGrowth: number;
     },
-    }
+    
 }
 
 export interface IApiSearchStock {
