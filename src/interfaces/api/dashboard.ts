@@ -7,6 +7,7 @@ export interface IApiDashboardDeposit {
 }
 
 export interface IApiDashboardChart {
+    portfolioAvgBuyPrice: number[]
     portfolio: number[]
     timeline: string[]
 }
